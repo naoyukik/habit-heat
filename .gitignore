@@ -32,3 +32,6 @@ yarn-error.log*
 
 # Conductor specific (Temporary or state files if any)
 conductor/setup_state.json
+
+# AI files
+*.local.md
