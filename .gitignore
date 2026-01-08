@@ -13,7 +13,7 @@ dist-backend/
 
 # IDEs and Editors
 .idea/
-.vscode/
+.vscode/*
 !.vscode/extensions.json
 *.swp
 *.swo
