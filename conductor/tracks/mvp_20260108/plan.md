@@ -1,13 +1,16 @@
 # Track Plan: Build the core MVP of habit-heat
 
 ## Phase 1: プロジェクト基盤構築
+- [ ] Task: モノレポ構成のセットアップ
+    - [ ] Subtask: ルートディレクトリに `pnpm-workspace.yaml` を作成（frontend, backendを指定）
+    - [ ] Subtask: `.gitignore` を更新し、各ディレクトリの依存関係などを適切に除外
 - [ ] Task: フロントエンドの初期セットアップ (Angular + Ignite UI)
-    - [ ] Subtask: pnpm create analog などを利用してAngularプロジェクトを作成、またはAngular CLIで作成
-    - [ ] Subtask: Ignite UI for Angular (OSS) をインストール・設定
-    - [ ] Subtask: Cloudflare Pages へのデプロイ設定を追加
+    - [ ] Subtask: `frontend/` ディレクトリにAngularプロジェクトを作成 (Angular CLI または Analog)
+    - [ ] Subtask: Ignite UI for Angular (OSS) を `frontend/` にインストール・設定
+    - [ ] Subtask: `frontend/` 用のCloudflare Pages デプロイ設定を追加
 - [ ] Task: バックエンドの初期セットアップ (Hono + Cloudflare Workers)
-    - [ ] Subtask: Hono プロジェクトを作成
-    - [ ] Subtask: Cloudflare Workers へのデプロイ設定
+    - [ ] Subtask: `backend/` ディレクトリにHonoプロジェクトを作成
+    - [ ] Subtask: `backend/` 用のCloudflare Workers デプロイ設定
     - [ ] Subtask: HonoとAngularのAPI通信確認（Hello World）
 - [ ] Task: データベース設定 (Cloudflare D1 + Drizzle)
     - [ ] Subtask: D1 データベースの作成とバインディング設定
